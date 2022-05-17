@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#E6888888">
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#128817"
+        android:text="Return to menu"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFish"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/catchTextStatic"
+        android:layout_width="218dp"
+        android:layout_height="26dp"
+        android:shadowRadius="5"
+        android:text="@string/congrats"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/textCaughtFishName"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:text="@string/defaultFish"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catchTextStatic"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textCaughtFishAttributes"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:shadowRadius="5"
+        android:text="@string/defaultStats"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCaughtFishName"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <ImageView
+        android:id="@+id/imageFish"
+        android:layout_width="295dp"
+        android:layout_height="278dp"
+        android:contentDescription="@string/fishDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCaughtFishAttributes"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <Button
+        android:id="@+id/buttonPlayAgain"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#128817"
+        android:text="@string/playAgain"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFish"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
